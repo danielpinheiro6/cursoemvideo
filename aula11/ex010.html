@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JavaScript</title>
+    <style>
+        div#result {
+            font: normal 2em Arial;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="inicial">
+        <h1>Sistema de multas</h1>
+        <p>Qual a velocidade do carro?</p>
+        <input type="number" name="velo1" id="velo1">
+        <input type="button" value="Avaliar" id="velo2" onclick="avaliar()">
+
+    </div>
+    <div id="result">Resultado</div>
+        
+    <script>
+        function avaliar() { 
+        var velocidade = document.querySelector('input#velo1')
+        var vel = Number(velocidade.value)
+        var result = document.querySelector('div#result')
+        result.innerHTML = (`A velocidade é ${vel}!`)
+        if (vel > 60) {
+            result.innerHTML += ` Você foi multado!!!!!`
+        } else {
+            result.innerHTML += `<p>Parabéns! Você está dentro do limite!!</p>`
+        }
+    }
+        
+        
+    </script>
+    
+</body>
+</html>

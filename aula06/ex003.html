@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(140, 133, 196);
+            color: white;
+            font: normal 25pt Arial;
+            /* Como fazer comentários em CSS*/
+        }
+        h1 {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <!-- Como fazer comentários em HTML-->
+    
+    <script>
+        //window.alert('minha primeira mensagem')
+        //window.confirm('Está entendendo até aqui, seu burro?')
+        //var nome = window.prompt('Qual é seu nome?')
+        //window.alert('É um prazer te conhencer, ' + nome + '!')
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outrno número'))
+        var soma = n1 + n2
+        //window.alert('A soma dos números escolhidos é ' + soma)
+
+        /*converter número em string
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outrno número'))
+        var soma = n1 + n2
+        window.alert('A soma dos números escolhidos é ' + soma.toString)
+        ou então*/
+        //window.alert('A soma dos números escolhidos é ' + String(soma))
+        window.alert(`A soma de ${n1} e ${n2} é ${soma}`)
+      
+        
+    </script>
+</body>
+</html>

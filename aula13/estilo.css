@@ -1,0 +1,42 @@
+body {
+    background: rgb(95, 95, 202);
+    color: white;
+    text-align: center;
+    
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 100px;
+    font: normal 40px Arial;
+    color: white;
+}
+
+header h2 {
+    padding-bottom: 20px;
+}
+
+section {
+    background: white;
+    border-radius: 1em;
+    padding: 2em;
+    width: 25em;
+    margin: auto;
+    box-shadow: 0rem -0.1rem 0.5rem 0.5rem rgb(133, 133, 156);
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font: italic 15px Arial;
+}
+
+@media(max-width:400px) {
+    section {
+        width: 20em;
+    }
+    section img {
+        width: 100%;
+    }
+}

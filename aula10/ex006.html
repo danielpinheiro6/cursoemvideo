@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 DOM</title>
+    <style>
+        body {
+            background: rgb(142, 142, 204);
+            font: normal 18pt Arial;
+        }
+
+        div.exercicio {
+            background: brown;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p1><strong>Aula 02 DOM</strong></p1>
+    <div id="area" class="nome">
+        <p>Interaja...</p>
+    </div> 
+
+    <!--Para fazer com que o HTML trabalhe a fórmula basta retirar o comentário e apagar addEventListener-->
+    <div class="exercicio"> <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">-->
+        <p>Clique</p>
+        
+    </div>
+    <script>
+       /* var teste = window.document.getElementById('area')
+        window.document.write('<br/><br/><br/>Está escrito lá ' + teste.innerText + '</br>')
+        
+        var nome = window.document.querySelector('div.nome')
+        window.document.write('Agora é diferente. Está escrito ' + nome.innerText)
+        nome.style.background = "green"
+
+        var parag = window.document.getElementsByTagName('p')[0]
+        parag.innerHTML = 'Mudei o Interaja para <strong>Presta atenção nas aulas</strong>'
+        */
+
+        // testando as funções DOM
+        var identidade = window.document.getElementsByClassName('exercicio')[0]
+        identidade.addEventListener('click', clicar)
+        identidade.addEventListener('mouseenter', entrar)
+        identidade.addEventListener('mouseout', sair)
+
+        function clicar() {
+            identidade.innerText = 'Mudou'
+            identidade.style.background = 'black'
+        }
+        function entrar() {
+            identidade.innerText = 'Entrou'
+            identidade.style.background = 'green'
+        }
+        function sair() {
+            identidade.innerText = 'Saiu'
+            identidade.style.background = 'purple'
+        }
+
+        // outra forma de fazer isso é forçao o javascript a rodar o código e não o HTML.
+        // PAra isso, necessário apagar as funções na div
+
+     
+        </script>
+
+</body>
+</html>

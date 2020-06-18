@@ -1,0 +1,34 @@
+body {
+    background: rgb(118, 118, 177);
+    color: white;
+    margin: auto;
+    padding-top: 50px;
+    
+}
+
+#titulo {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.876);
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+}
+
+#botao {
+    text-align: center;
+    margin-left: 220px; 
+}
+
+footer {
+    margin: auto;
+    width: 500px;
+    text-align: right;
+    font: italic 15px Arial;
+}

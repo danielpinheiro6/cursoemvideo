@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        //window.alert(`Prazer, ${nome}`)
+        document.write(`Seu nome é <strong>${nome}</strong> e tem ${nome.length} letras.<br/>`)
+        document.writeln(`Seu nome é ${nome.toUpperCase()} e tem ${nome.length} letras, seu burro.</br>`)
+        document.writeln(`Seu nome, seu burro, é ${nome.toLowerCase()}, <strong>${nome.toUpperCase()}</strong>, e já falei que tem <strong>${nome.length} letras</strong> seu <strong>FILHA DA PUTA</strong>.</br></br>`)
+        
+        
+        //var n1 = 1545.2546
+        //var n1.toFixed(2).replace('.', ',')
+        var n1 = 1564.5465
+        document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br>`)
+        document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</br>`)
+        document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`)
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body    {
+            background: rgb(153, 153, 228);
+            color: white;
+            font: normal 18pt Arial;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="mensagem" name="estudo" class="selector">Texto original é assim</div>
+    <script>
+        window.document.write('Existem várias formas de se escrever algo na tela. Posso fazer isso utilizando placeholder ou então concatenação</br>')
+        
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Olá Mundo!<br/>')
+        
+        // duas formas de escrever na tela
+        
+        document.write(`${p1.innerText}`)
+        document.write('</br></br>01</br>Está escrito assim: ' + p1.innerText)
+        // se eu usar p1.innerHTML vai puxar com as filhas (negrito, sublinhado etc)
+        document.write('</br></br>02</br>Está escrito assim: ' + p1.innerHTML)
+
+        // window.document.write(window.navigator.appName)
+        // window.document.write(window.document.charset)
+
+        // posso fazer muitas coisas direto via javascript... posso alterar o que eu quiser... não é a melhor forma
+        // eu preciso primeiro criar a variável e então chamá-la via algum código
+        window.p1.style.color = 'blue'
+
+        // mudando a cor de fundo, por exemplo
+
+        var corpo = window.document.body
+        corpo.style.background = 'green'
+
+        // utilizando o getElementByID
+        var ddd = window.document.getElementById('mensagem')
+        window.document.write('</br> Qual é o Id da div? ' + ddd.innerText)
+        ddd.style.background = 'blue'
+        ddd.innerText = 'Mudei o texto dessa caralha'
+        
+
+        // utilizando o getElementsByName
+        var ppp = window.document.getElementsByName('estudo')[0]
+        window.document.write('</br></br> Qual é o nome da div agora? ' + ppp.innerText)
+        // ppp.innerText = 'Rá! Mudei de novo o texto dessa porra'
+
+
+        // Utilizando o Selector
+        var sss = window.document.querySelector('div.selector') // se eu puxar pela class é ., se usar pelo Id é #
+        sss.style.background = "purple"
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
